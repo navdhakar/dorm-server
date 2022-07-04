@@ -1,0 +1,31 @@
+{
+  "name": "api_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api_server.js",
+  "scripts": {
+    "start": "node api_server.js"
+  },
+  "author": "navdeep dhakar",
+  "license": "ISC",
+  "dependencies": {
+    "auth_library": "file:auth_library",
+    "authtest": "file:./auth_library",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.27.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.3.0",
+    "fs": "^0.0.1-security",
+    "googleapis": "^92.0.0",
+    "multer": "^1.4.3",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "16.4.2"
+  }
+}
