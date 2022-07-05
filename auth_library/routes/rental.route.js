@@ -21,6 +21,7 @@ router.get("/rental_all", async (req, res) => {
   res.send(rentals_data);
 });
 router.post("/rental_local", async (req, res) => {
+console.log(req.body);
   const rentals_data = await Rental.find({$and:
     [
 
