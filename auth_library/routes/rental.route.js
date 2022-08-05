@@ -31,6 +31,10 @@ console.log(req.body);
   res.send(rentals_data);
 });
 
+router.post("/rental_area", async (req, res) => {
+  const rentals_data = await Rental.find({city:req.body.city}).select('area');
+  res.send(rentals_data);
+});
 
 
 router.post("/rental", async (req, res) => {
